@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css?family=Saira|Titillium+Web|Dancing+Script');
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Titillium Web', sans-serif;
+  color: #5d5d6a;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  color: #444444;
+  margin: 0;
+}
+body p {
+  font-size: 14px;
+  margin: 0;
+}
+body a {
+  color: #99a0af;
+  text-decoration: none;
+}
+body a:hover {
+  color: #ec4640;
+}
+body a:hover,
+body a:focus,
+body a:active {
+  text-decoration: none;
+}
+body container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 80px;
+}
+body img {
+  width: 100%;
+}
+nav {
+  width: 100%;
+  height: 125px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo {
+  font-size: 28px;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Saira', sans-serif;
+}
+nav .menuList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40%;
+}
+nav .menuList a:hover {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+nav .menuList a:hover::after {
+  content: '';
+  width: 15px;
+  border-bottom: 2px solid #ec4640;
+  position: absolute;
+  margin-top: 30px;
+}
+nav .menuList .menuItem {
+  list-style: none;
+}
+header {
+  width: 100%;
+  display: flex;
+  margin-top: 75px;
+}
+header .contentLeft {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+}
+header .contentLeft .introTitel {
+  font-family: 'Saira', sans-serif;
+  margin: 0;
+  margin-bottom: 16px;
+}
+header .contentLeft .introText {
+  margin: 0;
+  margin-bottom: 48px;
+}
+header .contentLeft .introSlogan {
+  font-family: 'Dancing Script', cursive;
+  color: #ec4640;
+  margin: 0;
+  margin-bottom: 48px;
+}
+header .contentLeft .appButtons img {
+  width: 165px;
+  margin-bottom: 50px;
+}
+header .contentLeft .appButtons .appStore {
+  margin-right: 16px;
+}
+header .contentRight {
+  display: flex;
+  max-width: 60%;
+  justify-content: flex-end;
+}
+header .contentRight .appImg {
+  width: 65%;
+  height: 100%;
+}
+section.companyLogos {
+  display: flex;
+  flex-direction: row;
+  background-color: #e2e7e7;
+  height: 125px;
+  margin: 0 -80px;
+}
+section.companyLogos .usersCompany {
+  width: 100%;
+  margin: 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section.companyLogos .usersCompany img {
+  width: 165px;
+  filter: grayscale(1);
+}
+section.companyLogos .usersCompany img:nth-child(3) {
+  height: 100%;
+  width: 10%;
+}
+section.featureList {
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+}
+section.featureList .contentLeft {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  max-width: 40%;
+}
+section.featureList .contentLeft .appImg {
+  width: 90%;
+  height: 80%;
+  margin-left: 40px;
+}
+section.featureList .contentRight {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  margin-left: 80px;
+}
+section.featureList .contentRight h2 {
+  margin: 0;
+  margin-bottom: 16px;
+}
+section.featureList .contentRight .listFeatures {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 40px;
+}
+section.featureList .contentRight .listFeatures .listItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 32px;
+}
+section.featureList .contentRight .listFeatures .listItem .featureIcon {
+  width: 75px;
+}
+section.featureList .contentRight .listFeatures .listItem .featureIcon img {
+  width: 100%;
+}
+section.featureList .contentRight .listFeatures .listItem .featureText {
+  margin-left: 24px;
+}
+section.statsBar {
+  display: flex;
+  flex-direction: row;
+  background-color: #ec4640;
+  margin: 0 -80px;
+}
+section.statsBar .barStats {
+  width: 100%;
+  margin: 0 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+section.statsBar .barStats .StatStat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 48px;
+  width: 25%;
+}
+section.statsBar .barStats .StatStat .statIcon {
+  width: 70px;
+}
+section.statsBar .barStats .StatStat .statIcon img {
+  width: 100%;
+}
+section.statsBar .barStats .StatStat .statTitle {
+  font-size: 20.02px;
+  margin: 0;
+  margin-top: 16px;
+}
+section.statsBar .barStats .StatStat .statTitle h4 {
+  color: #262d3c;
+}
+section.statsBar .barStats .StatStat .statText {
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+  margin-top: 8px;
+  margin-bottom: 48px;
+}
+section.statsBar .barStats .StatStat .statText p {
+  color: #444444;
+}
+section.whyAmazing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 -80px;
+  background-image: url('../img/backgrounduser.png');
+}
+section.whyAmazing .sectionLeft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin: 0;
+  margin-left: 80px;
+}
+section.whyAmazing .sectionLeft h1 {
+  color: white;
+}
+section.whyAmazing .sectionRight {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0;
+  margin-right: 80px;
+}
+section.whyAmazing .sectionRight h2 {
+  margin: 0;
+  margin-top: 64px;
+  margin-bottom: 16px;
+  color: white;
+}
+section.whyAmazing .sectionRight p {
+  color: white;
+}
+section.whyAmazing .sectionRight .amazingText {
+  margin: 0;
+  margin-bottom: 32px;
+}
+section.whyAmazing .sectionRight .amazingButtons {
+  margin: 0;
+  margin-bottom: 64px;
+}
+section.whyAmazing .sectionRight .amazingButtons .buttonStyle {
+  background-color: rgba(255, 255, 255, 0.45);
+  border: 1px solid #ec4640;
+  border-radius: 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ec4640;
+  padding: 10px 25px;
+  transition: all 0.2s ease-in-out;
+}
+section.whyAmazing .sectionRight .amazingButtons .buttonStyle:first-of-type {
+  margin-right: 24px;
+}
+section.whyAmazing .sectionRight .amazingButtons .buttonStyle:hover {
+  background-color: #ec4640;
+  color: white;
+  box-shadow: 10px 15px 35px rgba(236, 70, 64, 0.6);
+}
+footer.footer {
+  display: flex;
+  flex-direction: row;
+}
+footer.footer .footerContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+footer.footer .footerContent .contentLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 33%;
+  margin: 0;
+  margin-top: 56px;
+  margin-bottom: 56px;
+}
+footer.footer .footerContent .contentLeft span {
+  margin-bottom: 8px;
+}
+footer.footer .footerContent .contentMiddle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  margin: 0;
+  margin-top: 56px;
+  margin-bottom: 56px;
+}
+footer.footer .footerContent .contentMiddle span {
+  margin-bottom: 8px;
+}
+footer.footer .footerContent .contentRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 33%;
+  margin: 0;
+  margin-top: 56px;
+  margin-bottom: 56px;
+}
+footer.footer .footerContent .contentRight span {
+  margin-bottom: 8px;
+}

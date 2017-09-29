@@ -1,0 +1,70 @@
+section.whyAmazing {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0 -80px;
+	background-image: url('../img/backgrounduser.png');
+
+	.sectionLeft {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 50%;
+		margin: 0;
+		margin-left: 80px;
+	
+		h1 {
+			color: white;
+		}
+	}
+
+	.sectionRight {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		margin: 0;
+		margin-right: 80px;
+
+		h2 {
+			margin: 0;
+			margin-top: 64px;
+			margin-bottom: 16px;
+			color: white;
+		}
+
+		p {
+			color: white;
+		}
+		
+		.amazingText {
+			margin: 0;
+			margin-bottom: 32px;
+		}
+
+		.amazingButtons {
+			margin: 0;
+			margin-bottom: 64px;
+
+			.buttonStyle {
+				background-color: rgba(255, 255, 255, .45);
+				border: 1px solid @primary;
+				border-radius: 25px;
+				font-size: @font-sizeDefault;
+				text-transform: uppercase;
+				color: @primary;
+				padding: 10px 25px;
+				transition: all 0.2s ease-in-out;
+
+				&:first-of-type {
+					margin-right: 24px;
+				}
+			}
+
+			.buttonStyle:hover {
+				background-color: @primary;
+				color: white;
+				box-shadow: 10px 15px 35px rgba(236, 70, 64, 0.6)
+			}
+		}
+	}
+}
